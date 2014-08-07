@@ -1,0 +1,48 @@
+Log_Records
+-----------
+Log_ID (string)
+Log_Tutor (string)
+Log_Date (string)
+Log_Time (string)
+Log_Duration (string)
+Log_User_Type (string: User_Type.User_ID)
+Log_Personal_Details_ID (string)
+Log_Personal_Details_Surname (string)
+Log_Personal_Details_Firstname (string)
+Log_Call_Type (string: Call_Type.Call_ID)
+Log_Call_Sub_Type (string: Call_Sub_Type.Call_Sub_ID)
+Log_Resolve_Date (string)
+Log_Resolve_Time (string)
+Log_Resolve_Tutor (string)
+Log_Resolve_Status (string)
+Log_Problem_Description (memo)
+Log_Problem_Resolution (memo)
+Log_Modify_Date (string)
+Log_Modify_Time (string)
+Log_Modify_Tutor (string)
+
+User_Type
+---------
+User_ID (string)
+User_Description (string)
+User_Personal_Details_ID_Descriptor (string)
+
+
+Call_Type
+---------
+Call_ID (string)
+Call_Description (string)
+
+
+Call_Sub_Type
+-------------
+Call_Sub_ID (string)
+Call_Sub_Description (string)
+Call_Sub_Call_ID (string: foreign key: Call_Type.Call_ID)
+
+
+Audit_Logins
+------------
+Audit_Tutor (string)
+Audit_Date (string)
+Audit_Time (string)
